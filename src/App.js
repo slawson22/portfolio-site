@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
-// npm i aos --save >> "AOS" UPPERCASE 
 import AOS from 'aos';
-// must add css link
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css';
 import Hero from './components/Hero.js';
 import Header from './components/Header.js';
@@ -11,6 +10,7 @@ import Resume from './components/Resume.js';
 import Certifications from './components/Certifications.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
+
 
 export default function App() {
   
