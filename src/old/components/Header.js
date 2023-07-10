@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHouse, faUser, faFile, faBookOpen, faServer } from '@fortawesome/free-solid-svg-icons'
 
@@ -63,7 +63,7 @@ export default function Header(){
                     <li>
                         <a href="#services" className="nav-link scrollto">
                             <i className=""><FontAwesomeIcon icon={faServer} /></i>
-                            <span>Certifications</span>
+                            <span>Services</span>
                         </a>
                     </li>
                     <li>

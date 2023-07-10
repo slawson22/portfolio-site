@@ -10,7 +10,6 @@ export default function Resume(){
 
                 <div className="section-title">
                     <h2>Resume</h2> 
-                    <p><em>A team player with excellent communciation and leadership skills with 10+ years of problem solving experience.</em></p>
                 </div>
 
                 <div className="row">
@@ -19,18 +18,18 @@ export default function Resume(){
                         <div className="resume-item pb-0">
                             <h4>Steven Lawson</h4>
                             <ul>
-                                <li>Extensive depth of technical expertise including front end and backend languages and frameworks</li>
-                                <li>Exceptional customer service skills resulting in unparalleled service delivery and customer satisfaction</li>
-                                <li>Advanced troubleshooting techniques for all types of technical inquiries, service requests</li>
-                                <li>Self motivated ensuring optimal productivity and efficiency in all tasks undertaken</li>
-                                <li>Inspired team leader fostering a supportive environment focused on improving team performance.</li>
+                                <li>Experienced in techincal and customer service</li>
+                                <li>Self motivated with excellent time management</li>
+                                <li>Supportive team leader </li>
                             </ul>
+                            <p><em>A team player with excellent communciation and leadership skills with 10+ years of problem solving experience.</em></p>
                         </div>
 
                         <h3 className="resume-title">Education</h3>
                         <div className="resume-item">
-                            <h4>Business Marketing - Diploma | Humber College</h4>
-                            <p><em>Toronto, ON</em></p>
+                            <h4>Business Marketing - Diploma</h4>
+                            <h5>2008 - 2010</h5>
+                            <p><em>Humber College, Toronto, ON</em></p>
                             <p>Covered the essentials of the research study on markets, products, pricing, distribution, and promotions (through advertising, sales promotion, personal selling, and/or publicity).</p>
                         </div>
                     </div>

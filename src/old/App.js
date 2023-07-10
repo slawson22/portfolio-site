@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react';
+import './App.css';
+import AOS from 'aos';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
 import Hero from './components/Hero.js';
 import Header from './components/Header.js';
 import Bio from './components/Bio';
@@ -6,23 +10,9 @@ import Resume from './components/Resume.js';
 import Certifications from './components/Certifications.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './App.css';
-
 
 
 export default function App() {
-
-  useEffect(() => { 
-    AOS.init()
-    let preloader = document.querySelector("#preloader");
-    if (preloader) {
-      setTimeout(() => { 
-        preloader.remove()
-      }, 1000)
-    }
-  },[])    
   
   return (
     <>
@@ -37,5 +27,5 @@ export default function App() {
     </main>
     </>
   )
-
-}
+};
+ 

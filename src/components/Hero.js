@@ -10,22 +10,22 @@ export default function Hero(){
             <div className="container" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Steven Lawson</h1>
                 
-                <p>I am a <span className="typed">
-                <Typed
-                    strings={["Designer", "Developer", "Freelancer", "Photographer"]}
-                    typeSpeed={60}
-                    startDelay={1000}
-                    backDelay={1000}
-                    loop
-                /></span></p>
+                <p><span className="typed">
+                    <Typed
+                        strings={["Problem Solver", "Team Leader", "Technical Service Specialist", "Customer Service Specialist"]}
+                        typeSpeed={60}
+                        startDelay={1000}
+                        backDelay={1000}
+                        loop
+                    />
+                </span></p>
 
 
                 <div className="social-links">
-                    <a href="#" className="twitter">    
-                    </a>
-                    <a href="tinyurl.com/mwa5rnk9" className="facebook"><i className="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/stevenlawsonphoto/" className="instagram"><i className="bx bxl-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/steve-r-lawson/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                    <a href="https://twitter.com/StevenLawson22" target="_blank" rel="noreferrer" className="twitter"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090054874733" target="_blank" className="facebook"><i className="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/stevenlawsonphoto/" target="_blank" className="instagram"><i className="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/steve-r-lawson/" target="_blank" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                 </div>
             </div>
         </section>

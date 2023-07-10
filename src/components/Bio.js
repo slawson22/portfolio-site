@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
-
 
 
 export default function Bio(){
@@ -8,10 +7,13 @@ export default function Bio(){
     const progressBar = {
         'CSS': 70,
         'HTML': 80,
+        'REACT JS': 70,
         'JAVASCRIPT': 65,
         'PHOTOSHOP': 70,
         'MSSQL': 65,
         'PYTHON': 60,
+        'MICROSOFT OS':90,
+        'MacOS/LINUX':70,
     }
 
     return (
@@ -24,7 +26,7 @@ export default function Bio(){
                 
                 <div className="row">
                     <div className="col-lg-4">
-                        <img src="assets/img/profile-img.jpg" className="img-fluid" alt="" />
+                        <img src={require("../img/profile-img.jpg")} className="img-fluid" alt="" />
                     </div>
                    
                     <div className="col-lg-8 pt-4 pt-lg-0 content">
@@ -33,8 +35,8 @@ export default function Bio(){
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Self Taught Programmer</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Self Taught Programmer</span></li>
+                                    <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                                 </ul>
                                 <p>A self-taught programmer with a love for photography who has developed a strong foundation through extensive practice and self-study.</p>
                             </div>
@@ -54,62 +56,29 @@ export default function Bio(){
 
                 <div className="row skills-content">
                     <div className="col-lg-6">
-                        <div className="progress">
-                            <span className="skill">HTML<i className="val">{progressBar.HTML}%</i></span>
-                            <ProgressBar 
-                                animated
-                                now={progressBar.HTML}
-                                max={100}
-                            />
-                        </div>
-
-                        <div className="progress">
-                            <span className="skill">CSS<i className="val">{progressBar.CSS}%</i></span>
-                            <ProgressBar 
-                                animated
-                                now={progressBar.CSS}
-                                max={100}
-                            />
-                        </div>
-
-                        <div className="progress">
-                            <span className="skill">Python <i className="val">{progressBar.PYTHON}%</i></span>
-                            <ProgressBar 
-                                animated
-                                now={progressBar.PYTHON}
-                                max={100}
-                            />
-                        </div>
+                        {Object.entries(progressBar).slice(0,4).map(([key, value]) => (
+                            <div className="progress">
+                                <span className="skill">{key}<i className="val">{value}%</i></span>
+                                    <ProgressBar 
+                                        animated
+                                        now={value}
+                                        max={100}
+                                    />
+                            </div>
+                        ))}
                     </div>
 
-                    <div className="col-lg-6">
-                        
-                        <div className="progress">
-                            <span className="skill">JavaScript <i className="val">{progressBar.JAVASCRIPT}%</i></span>
-                            <ProgressBar 
-                                animated
-                                now={progressBar.JAVASCRIPT}
-                                max={100}
-                            />
-                        </div>
-
-                        <div className="progress">
-                            <span className="skill">MSSQL <i className="val">{progressBar.MSSQL}%</i></span>
-                            <ProgressBar 
-                                    animated
-                                    now={progressBar.MSSQL}
-                                    max={100}
-                            />
-                        </div>
-
-                        <div className="progress">
-                            <span className="skill">Photoshop <i className="val">{progressBar.PHOTOSHOP}%</i></span>
-                                <ProgressBar 
+                    <div className="col-lg-6">    
+                        {Object.entries(progressBar).slice(5,10).map(([key, value]) => (
+                            <div className="progress">
+                                <span className="skill">{key}<i className="val">{value}%</i></span>
+                                    <ProgressBar 
                                         animated
-                                        now={progressBar.PHOTOSHOP}
+                                        now={value}
                                         max={100}
-                                />
-                        </div>
+                                    />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

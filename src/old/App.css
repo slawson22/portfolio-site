@@ -20,7 +20,7 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-/* .back-to-top {
+.back-to-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -48,7 +48,7 @@ h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
-} */
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -269,7 +269,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../public/assets/img/hero-bg.jpg") top right no-repeat;
+  /* background: url("../img/hero-bg.jpg") top right no-repeat; */
   background-size: cover;
   position: relative;
 }
@@ -471,7 +471,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# skills
+# Akills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
