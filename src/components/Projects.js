@@ -56,19 +56,19 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    {/* <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />
+                            <img src="assets/img/portfolio/project_CPP_guess_game.gif" className="img-fluid" alt="" />
                             <div className="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
+                                <h4>C++</h4>
+                                <p>Guess Game: Movie titles</p>
                                 <div className="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfoliogallery" className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus"></i></a>
+                                    <a href="assets/img/portfolio/project_CPP_guess_game.gif" data-gallery="portfoliogallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus"></i></a>
                                     <a href="portfolio-details.html" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div className="portfolio-wrap">
