@@ -5,8 +5,7 @@ import emailjs from '@emailjs/browser';
 
   
         const form = useRef();
-
-        const [client, setClient] = useState([]);
+        const [client, setClient] = useState({});
         const [name, setName] = useState('');
         const [email, setEmail] = useState('');
         const [subject, setSubject] = useState('');
@@ -16,13 +15,13 @@ import emailjs from '@emailjs/browser';
             e.preventDefault();
             
             // collect input1  
-            const emailData = {
-                name: name,
-                to: 'steven.lawson22@gmail.com',
-                from: email,
-                subject: subject,
-                message: msg
-            };
+            // const emailData = {
+            //     name: name,
+            //     to: 'steven.lawson22@gmail.com',
+            //     from: email,
+            //     subject: subject,
+            //     message: msg
+            // };
 
             emailjs.sendForm('service_n0ylxe7', 'template_5zpp8pk', form.current, 'odJXnCl_F4SXHyh22')
             .then((result) => {
