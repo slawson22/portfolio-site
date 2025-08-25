@@ -6,16 +6,17 @@ export default function Projects({title,description,src,link}){
     return (
         <> 
         <section id="portfolio" className="portfolio section-bg">
-            <div className="container" data-aos="fade-up" >
+            <div className="container slider-container" data-aos="fade-up" >
 
                 <div className="section-title">
                     <h2>Portfolio</h2>
                     <p>Here are a few projects that I have completed using a variety of applications and languages.</p>
                 </div>
 
-                <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div className="portfolio-wrap">
+                <div className="row portfolio-container slider" data-aos="fade-up" data-aos-delay="200">
+                    
+                    <div className=" portfolio-item filter-app ">
+                        <div className="portfolio-wrap slide .slide-red">
                             <img src="assets/img/portfolio/project_python.gif" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>PYTHON</h4>
@@ -28,8 +29,8 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div className="portfolio-wrap">
+                    <div className=" portfolio-item filter-app ">
+                        <div className="portfolio-wrap slide .slide-red">
                             <img src="assets/img/portfolio/project_react.gif" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>REACT JS</h4>
@@ -42,8 +43,8 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div className="portfolio-wrap">
+                    <div className=" portfolio-item filter-app ">
+                        <div className="portfolio-wrap slide .slide-red">
                             <img src="assets/img/portfolio/project_react_email_app.gif" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>REACT JS</h4>
@@ -56,8 +57,8 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div className="portfolio-wrap">
+                    <div className=" portfolio-item filter-app ">
+                        <div className="portfolio-wrap slide .slide-red">
                             <img src="assets/img/portfolio/project_CPP_guess_game.gif" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>C++</h4>
@@ -70,7 +71,7 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    {/* <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                    {/* <div className=" portfolio-item filter-web">
                         <div className="portfolio-wrap">
                         <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />
                             <div className="portfolio-info">
@@ -84,7 +85,7 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div className=" portfolio-item filter-app">
                         <div className="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />
                             <div className="portfolio-info">
@@ -98,7 +99,7 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div className=" portfolio-item filter-card">
                         <div className="portfolio-wrap">
                         <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />
                         <div className="portfolio-info">
@@ -112,7 +113,7 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div className=" portfolio-item filter-card">
                         <div className="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="" />
                             <div className="portfolio-info">
@@ -126,7 +127,7 @@ export default function Projects({title,description,src,link}){
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div className=" portfolio-item filter-web">
                         <div className="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="" />
                             <div className="portfolio-info">

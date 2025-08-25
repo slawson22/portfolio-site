@@ -2,7 +2,7 @@
   "name": "ps",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/slawson22/portfolio-site.git",
+  "homepage": "https://slawson22.github.io/portfolio-site",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

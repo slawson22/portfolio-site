@@ -12,7 +12,7 @@ export default function Hero(){
                 
                 <p><span className="typed">
                     <Typed
-                        strings={["Problem Solver", "Team Leader", "Technical Service Specialist", "Customer Service Specialist"]}
+                        strings={["Problem Solver", "Team Leader", "Technical Service Specialist", "Web Developer"]}
                         typeSpeed={60}
                         startDelay={1000}
                         backDelay={1000}

@@ -790,6 +790,37 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Portfolio / Slider
+--------------------------------------------------------------*/
+.slider-container {
+  width: 80%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+ .slider {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slide {
+  display: flex;
+  height: 100vh;  
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: black;
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.slide-red { background-color: red; }
+.slide-blue { background-color: blue; }
+.slide-green { background-color: green; }
+.slide-orange { background-color: orange; }
+
+/*--------------------------------------------------------------
 # Services / Certifications
 --------------------------------------------------------------*/
 .services .icon-box {
